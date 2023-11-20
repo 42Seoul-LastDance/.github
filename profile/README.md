@@ -15,7 +15,6 @@
 ## Login [OAuth]
 
 - user는 42 intranet의 OAuth 시스템을 이용하여 로그인할 수 있어야 한다.
-- user는 website에 표시될 unique한 nickname을 선택할 수 있다.
 
   
 <img width="600" src="https://github.com/42Seoul-LastDance/ft_transcendence/assets/87380790/68d4c1d8-4aec-411c-8f2a-a2bc0aa013c9">
@@ -24,8 +23,6 @@
 
 ## Chatting
 - user는 channel(chat rooms)를 만들 수 있어야 한다. 종류는 public, private 혹은 password로 보호되는 방이다.
-- user는 다른 user들에게 direct message를 볼 수 있어야 한다.
-- user는 다른 user를 차단할 수 있어야 한다. 이러한 방법으로, 차단한 user의 메시지를 볼 수 없어야 한다.
 - 새로운 channel을 만든 user는 자동으로 channel owner가 된다.
     - channel owner는 channel에 들어오기 위한 비밀번호를 설정, 변경, 삭제할 수 있다.
     - channel owner는 administrator이기도 하다. 또한 다른 User를 administrator로 설정할 수 있다.
@@ -57,7 +54,9 @@
 <br/><br/>
 
 ## Friend
-
+- user는 다른 user들에게 direct message를 보낼 수 있어야 한다.
+- user는 다른 user를 차단할 수 있어야 한다. 이러한 방법으로, 차단한 user의 메시지를 볼 수 없어야 한다.
+- user는 다른 user를 친구로 추가하고 그들의 현재 상태를 볼 수 있다. (online, offline, in a game, 등등)
 <img width="400" alt="Screen Shot 2023-11-10 at 3 26 42 PM" src="https://github.com/42Seoul-LastDance/ft_transcendence/assets/87380790/6d2dfe38-6efe-49dc-a979-34551f2ce17e">
 <img width="400" alt="Screen Shot 2023-11-10 at 3 25 46 PM" src="https://github.com/42Seoul-LastDance/ft_transcendence/assets/87380790/69365572-5334-4a13-a1b9-241821972ea5">
 
@@ -65,9 +64,9 @@
 <br/><br/>
 
 ## Profile
+- user는 website에 표시될 unique한 nickname을 선택할 수 있다.
 - user는 프로필 이미지를 업로드할 수 있다. 업로드 하지 않는 경우 디폴트 이미지가 설정되어야한다.
 - user는 two-factor authentication을 활성화하고 이용할 수 있다. (Google Authenticator 또는 text message를 보내는 것)
-- user는 다른 user를 친구로 추가하고 그들의 현재 상태를 볼 수 있다. (online, offline, in a game, 등등)
 - 각 user는 자신만의 Match History를 가지고 있어야 하며 로그인한 사람이라면 누구나 볼 수 있어야 한다. (1대1 게임, ladder 게임 등 유의미한 것들.)
 
 <img width="600" alt="Screen Shot 2023-11-10 at 3 32 03 PM" src="https://github.com/42Seoul-LastDance/ft_transcendence/assets/87380790/f61203c3-2cb8-40c3-b1e4-0f7ea2fe8cf9">
