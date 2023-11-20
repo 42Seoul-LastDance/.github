@@ -16,10 +16,6 @@
 
 - user는 42 intranet의 OAuth 시스템을 이용하여 로그인할 수 있어야 한다.
 - user는 website에 표시될 unique한 nickname을 선택할 수 있다.
-- user는 프로필 이미지를 업로드할 수 있다. 업로드 하지 않는 경우 디폴트 이미지가 설정되어야한다.
-- user는 two-factor authentication을 활성화하고 이용할 수 있다. (Google Authenticator 또는 text message를 보내는 것)
-- user는 다른 user를 친구로 추가하고 그들의 현재 상태를 볼 수 있다. (online, offline, in a game, 등등)
-- 각 user는 자신만의 Match History를 가지고 있어야 하며 로그인한 사람이라면 누구나 볼 수 있어야 한다. (1대1 게임, ladder 게임 등 유의미한 것들.)
 
   
 <img width="600" src="https://github.com/42Seoul-LastDance/ft_transcendence/assets/87380790/68d4c1d8-4aec-411c-8f2a-a2bc0aa013c9">
@@ -69,8 +65,20 @@
 <br/><br/>
 
 ## Profile
+- user는 프로필 이미지를 업로드할 수 있다. 업로드 하지 않는 경우 디폴트 이미지가 설정되어야한다.
+- user는 two-factor authentication을 활성화하고 이용할 수 있다. (Google Authenticator 또는 text message를 보내는 것)
+- user는 다른 user를 친구로 추가하고 그들의 현재 상태를 볼 수 있다. (online, offline, in a game, 등등)
+- 각 user는 자신만의 Match History를 가지고 있어야 하며 로그인한 사람이라면 누구나 볼 수 있어야 한다. (1대1 게임, ladder 게임 등 유의미한 것들.)
 
 <img width="600" alt="Screen Shot 2023-11-10 at 3 32 03 PM" src="https://github.com/42Seoul-LastDance/ft_transcendence/assets/87380790/f61203c3-2cb8-40c3-b1e4-0f7ea2fe8cf9">
+
+<br/><br/>
+
+## Security Concerns
+- 데이터베이스에 저장되는 비밀번호는 hashed 상태로 저장되어야 한다.
+- 웹 사이트는 SQL injection으로부터 보호되어야 한다.
+- 사용자의 입력이나 form에 대해 server-side 검증을 구현해야 한다.
+- (모든 보안 관련한 API key, credential, env 변수들은 .env 파일에 로컬 상태로 보관되어야한다.)
 
 <br/><br/>
 
@@ -79,8 +87,4 @@
 <img width="1444" alt="Screen Shot 2023-11-10 at 4 48 57 PM" src="https://github.com/42Seoul-LastDance/ft_transcendence/assets/87380790/e43fb017-8a8e-4754-98b1-068b6f3f0eac">
 
 
-## Security Concerns
-- 데이터베이스에 저장되는 비밀번호는 hashed 상태로 저장되어야 한다.
-- 웹 사이트는 SQL injection으로부터 보호되어야 한다.
-- 사용자의 입력이나 form에 대해 server-side 검증을 구현해야 한다.
-- (모든 보안 관련한 API key, credential, env 변수들은 .env 파일에 로컬 상태로 보관되어야한다.)
+
