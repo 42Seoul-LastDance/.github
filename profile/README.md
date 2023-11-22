@@ -1,4 +1,6 @@
-# ft_transcendence
+# Pongmates
+
+### ft_transcendence assignment from 42seoul
 
 > Real-time Multiplayer Pong Game with Chat, OAuth
 
